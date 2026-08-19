@@ -1,0 +1,72 @@
+gradlew.bat clean compileJava
+
+gradlew.bat bootRun
+======================
+AuthService
+│
+├── src/main/java/com/example/AuthService
+│
+├── config
+│   └── JpaConfig.java
+├── controller
+│   └── AuthController.java
+│
+├── service
+│   ├── AuthService.java
+│   └── JwtService.java
+│
+├── entity
+│   └── User.java
+│
+├── repository
+│   └── UserRepository.java
+│
+├── dto
+│   ├── RegisterRequest.java
+│   ├── LoginRequest.java
+│   ├── AuthResponse.java
+│   └── ApiResponse.java
+│
+├── security
+│   ├── SecurityConfig.java
+│   └── JwtAuthenticationFilter.java
+│
+└── AuthServiceApplication.java
+
+<!-- ============================================= -->
+
+AuthService
+│
+├── controller
+│   └── EmployeeImportController.java
+│
+├── service
+│   ├── EmployeeService.java
+│   └── importservice
+│       ├── CsvImportService.java
+│       ├── CsvImportWorker.java
+│       └── ImportDefinition.java
+│
+├── entity
+│   ├── Employee.java
+│   └── ImportJob.java
+│
+├── repository
+│   ├── EmployeeRepository.java
+│   └── ImportJobRepository.java
+│
+├── dto
+│   ├── ImportResponse.java
+│   └── ImportStatusResponse.java
+│
+├── config
+│   └── AsyncConfig.java
+│
+├── exception
+│   └── GlobalExceptionHandler.java
+│
+└── AuthServiceApplication.java
+
+<!-- ====================== -->
+SHOW VARIABLES LIKE 'local_infile';
+SET GLOBAL local_infile = 1;
