@@ -1,6 +1,6 @@
 gradlew.bat clean compileJava
 
-gradlew.bat bootRun
+
 ======================
 
 
